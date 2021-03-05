@@ -3,32 +3,32 @@
 <head>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <header>
+<body id="body">
+    <header id="header">
         <h1>Editor de Memes</h1>
         <nav>
             <ul>
-                <li>Imagen</li>
-                <li>Texto</li>
-                <li><button type="button" onclick="cambiarModo()">Modo Oscuro</button></li>
+                <li id="img">Imagen</li>
+                <li id="txt">Texto</li>
+                <li id="drk"><button type="button" id="button4" onclick="cambiarModo()">Modo Oscuro</button></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="container">
-            <div class="entirememe">
-                <article class="toptxt">
+            <div class="entirememe" id="container">
+                <article class="toptxt" id="txt1">
                     Top Text
                 </article>
                 <article class="imgmeme">
                 </article>
-                <article class="btmtxt">
+                <article class="btmtxt" id="txt2">
                     Bottom Text
                 </article>
             </div>
-            <button class="buttondwld">Descargar meme</button>
+            <button class="buttondwld" id="button5">Descargar meme</button>
         </section>
-        <aside>
+        <aside id="aside">
             <form>
                 <h2>Texto</h2>
                 <label>Superior</label>
@@ -81,9 +81,9 @@
                 <br>
                 <div>
                     <label>Contorno</label>
-                    <button>Ninguno</button>
-                    <button>Claro</button>
-                    <button>Oscuro</button>
+                    <button id="button1">Ninguno</button>
+                    <button id="button2">Claro</button>
+                    <button id="button3">Oscuro</button>
                 </div>
                 <br>
                 <div>
@@ -140,11 +140,38 @@
             </form>
         </aside>
     </main>
-    <footer>Hecho con amor por Pilar</footer>
+    <footer id="footer">Hecho con amor por Pilar</footer>
     <script>
         function cambiarModo() {
             const body = document.body;
             body.classList.toggle ("darkmode");
-        }
+
+            const aside = document.getElementById("aside");
+            aside.classList.toggle("darkmode");
+
+            const header = document.getElementById("header");
+            header.classList.toggle("darkmode");
+
+            const container = document.getElementById("container");
+            container.classList.toggle("darkmode");
+
+            const button = document.getElementById("button1.button2.button3.button4.button5.img.txt.drk.");
+            button1.classList.toggle("darkmode");
+            button2.classList.toggle("darkmode");
+            button3.classList.toggle("darkmode");
+            button4.classList.toggle("darkmode");
+            button5.classList.toggle("darkmode");
+            img.classList.toggle("darkmode");
+            txt.classList.toggle("darkmode");
+            drk.classList.toggle("darkmode");
+
+            const text = document.getElementById("txt1.txt2.");
+            txt1.classList.toggle("darkmode");
+            txt2.classList.toggle("darkmode");
+
+            const footer = document.getElementById("footer");
+            footer.classList.toggle("darkmode");
+        } 
+     
     </script>
 </body>
