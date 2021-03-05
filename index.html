@@ -10,7 +10,7 @@
             <ul>
                 <li>Imagen</li>
                 <li>Texto</li>
-                <li>Modo oscuro</li>
+                <li><button type="button" onclick="cambiarModo()">Modo Oscuro</button></li>
             </ul>
         </nav>
     </header>
@@ -137,9 +137,14 @@
                 <label for="Negativo"></label>
                 <input type="range" id="">
             </div>
-
             </form>
         </aside>
     </main>
     <footer>Hecho con amor por Pilar</footer>
+    <script>
+        function cambiarModo() {
+            const body = document.body;
+            body.classList.toggle ("darkmode");
+        }
+    </script>
 </body>

@@ -4,12 +4,6 @@
     box-sizing: border-box;
 } 
 
-:root {
-    background-color: #ECD078;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #542437;
-}
-
 header {
     padding-top: 2%;
     background-color: #53777A;
@@ -17,12 +11,14 @@ header {
 
 body{
     height: 100vh;
+    background-color: #ECD078;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #542437;
 }
 
 main {
     display: flex;
 }
-
 
 h1 {
     text-align: center;
@@ -151,7 +147,16 @@ footer {
     padding-bottom: 2%;
 }
 
-body.darkmode {
+.darkmode {
     background-color: #001830;
-    color: #486090;
+    color: #000000;
+}
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ECD078;
+    border: 0cm;
+    color: #542437;
+    font-weight: bold;
+    cursor: pointer;
 }
